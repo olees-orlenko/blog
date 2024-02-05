@@ -8,9 +8,11 @@ class Blog(models.Model):
     user = models.OneToOneField(
         User, on_delete=models.CASCADE, related_name="blog", verbose_name="Пользователь"
     )
+
     class Meta:
         verbose_name = "Блог"
         verbose_name_plural = "Блоги"
+
 
 class Post(models.Model):
     title = models.CharField(verbose_name="Заголовок", blank=False, max_length=100)

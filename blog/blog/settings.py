@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'rest_framework',
+    "rest_framework",
     "posts",
     "api",
 ]
@@ -52,8 +52,8 @@ MIDDLEWARE = [
 
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.AllowAny"],
-    'DEFAULT_PAGINATION_CLASS': 'api.paginations.LimitedPageNumberPagination',
-    'PAGE_SIZE': 10,
+    "DEFAULT_PAGINATION_CLASS": "api.paginations.LimitedPageNumberPagination",
+    "PAGE_SIZE": 10,
 }
 
 ROOT_URLCONF = "blog.urls"
